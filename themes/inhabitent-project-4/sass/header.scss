@@ -1,0 +1,16 @@
+.site-header {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid $lite-grey;
+
+    
+    .main-navigation {
+        color: $lite-grey;
+        padding-left: 75%;
+
+        li {
+            padding: 10px;
+        }
+    }
+}
+
