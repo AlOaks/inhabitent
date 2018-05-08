@@ -29,7 +29,6 @@ themes/*
 !themes/inhabitent-project-4/
 
 themes/inhabitent-project-4/node_modules
-themes/inhabitent-project-4/package-lock.json
 
 # Ignore packages #
 
