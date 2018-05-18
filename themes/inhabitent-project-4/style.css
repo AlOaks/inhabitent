@@ -1,5 +1,5 @@
-/* !
-Theme Name: Inhabitent Theme Final
+/*!
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -43,6 +43,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.widget-area a {
+  text-decoration: none;
+  color: purple; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -225,6 +229,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Bold.eot");
+  src: url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff"), url("Merriweather-Bold.ttf") format("truetype"), url("Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-LightItalic.eot");
+  src: url("Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff"), url("Merriweather-LightItalic.ttf") format("truetype"), url("Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Light.eot");
+  src: url("Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff"), url("Merriweather-Light.ttf") format("truetype"), url("Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-BoldItalic.eot");
+  src: url("Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff"), url("Merriweather-BoldItalic.ttf") format("truetype"), url("Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento sans wide Normal';
+  src: url("Novecentosanswide-Normal.eot");
+  src: url("Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-Normal.woff2") format("woff2"), url("Novecentosanswide-Normal.woff") format("woff"), url("Novecentosanswide-Normal.ttf") format("truetype"), url("Novecentosanswide-Normal.svg#Novecentosanswide-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento sans wide';
+  src: url("Novecentosanswide-DemiBold.eot");
+  src: url("Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-DemiBold.woff2") format("woff2"), url("Novecentosanswide-DemiBold.woff") format("woff"), url("Novecentosanswide-DemiBold.ttf") format("truetype"), url("Novecentosanswide-DemiBold.svg#Novecentosanswide-DemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -667,11 +713,376 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
   width: 100%;
   border-bottom: 1px solid #a1a1a1; }
+  .site-header .minilogo {
+    background: url("../../images/logos/inhabitent-logo-tent.svg") 50%/50px no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 125px; }
   .site-header .main-navigation {
     color: #a1a1a1;
-    padding-left: 75%; }
+    margin-right: 80px; }
     .site-header .main-navigation li {
-      padding: 10px; }
+      float: right;
+      padding-left: 30px;
+      font-size: 18px; }
+
+.single-product .size-medium {
+  height: 1000px; }
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-header a {
+    text-decoration: none; }
+  .page-header .shop-title {
+    text-transform: uppercase; }
+  .page-header .product-types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    margin-left: -20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: sans-serif; }
+    .page-header .product-types li {
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      color: #248A83;
+      text-transform: uppercase; }
+
+.product-catalog {
+  display: grid;
+  grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12" "13 14 15 16";
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-top: 2px dotted #a1a1a1;
+  padding-top: 50px; }
+
+.product-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 300px;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 30px; }
+  .product-box .product-image > a > img {
+    height: 250px;
+    width: 300px; }
+  .product-box .product-info {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -10px;
+    padding: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #d1d1d1;
+    border-top: 8px solid #d1d1d1; }
+    .product-box .product-info .product-price {
+      margin-top: 30px;
+      color: #a1a1a1;
+      font-family: "Merriweather"; }
+    .product-box .product-info .product-titles {
+      margin-top: 30px;
+      font-family: "Merriweather"; }
+
+.product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 80px; }
+
+.image-wrapper {
+  padding-right: 50px;
+  padding-left: 50px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+.product-information {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+.product-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #d99054;
+  margin-top: 0; }
+
+.price {
+  font-size: 25px;
+  font-family: sans-serif; }
+
+.product-description {
+  line-height: 25px;
+  width: 80%; }
+
+.hero-wrapper {
+  background-color: black;
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  z-index: -50;
+  opacity: .4; }
+
+.about-hero-image {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  z-index: -100; }
+
+.about-main-title {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 250px;
+  left: 43%;
+  text-transform: uppercase; }
+
+.page-id-8 .minilogo {
+  background: url("../../images/logos/inhabitent-logo-tent-white.svg") 50%/50px no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-left: 125px; }
+
+.the-content {
+  position: relative;
+  top: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .the-content .about-title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #2f1339; }
+  .the-content .about-description {
+    text-align: left;
+    font-family: "Merriweather";
+    font-size: 20px;
+    width: 60%;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+.page-id-8 .site-header {
+  border-bottom: 0;
+  background: transparent;
+  position: absolute; }
+  .page-id-8 .site-header a {
+    color: white;
+    font-family: sans-serif; }
+
+.page-id-8 .site-footer {
+  position: relative;
+  top: 800px; }
+
+.site-footer {
+  background-image: url("../../images/dark-wood.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .site-footer .copyright {
+    margin-left: 40%;
+    margin-bottom: 30px;
+    color: white;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .site-footer #footer-sidebar1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 50%;
+    font-family: "Merriweather";
+    font-size: 20px;
+    margin-top: 25px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    .site-footer #footer-sidebar1 .social-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .site-footer #footer-sidebar1 .social-media a {
+        color: white; }
+    .site-footer #footer-sidebar1 .link {
+      color: white;
+      text-decoration: none; }
+      .site-footer #footer-sidebar1 .link:hover {
+        text-decoration: underline; }
+    .site-footer #footer-sidebar1 p {
+      color: white; }
+    .site-footer #footer-sidebar1 h3 {
+      color: #d99054;
+      font-family: sans-serif;
+      text-transform: uppercase; }
+    .site-footer #footer-sidebar1 .widget-hours {
+      color: white; }
+  .site-footer .widget-title {
+    color: #d99054;
+    text-transform: uppercase; }
+  .site-footer .inhabitent-footer-logo {
+    background-image: url("../../images/logos/inhabitent-logo-text.svg");
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 50px;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%; }
+
+.blog {
+  display: grid;
+  grid-areas: "post post sidebar" "post post sidebar" "post post sidebar" "post post sidebar" "post post sidebar"; }
+  .blog img {
+    width: 700px; }
+  .blog .sidebar {
+    grid-area: "sidebar"; }
+  .blog .entry-content {
+    width: 700px; }
+  .blog .entry-title {
+    padding: 20px;
+    background-color: #248A83;
+    width: 500px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: left; }
+    .blog .entry-title a {
+      text-decoration: none;
+      color: white; }
+
+.page-id-75 .minilogo {
+  background: url("../../images/logos/inhabitent-logo-tent-white.svg") 50%/50px no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-left: 125px; }
+
+.page-id-75 .site-header {
+  border-bottom: 0;
+  background: transparent;
+  position: absolute; }
+  .page-id-75 .site-header a {
+    color: white;
+    font-family: sans-serif; }
+
+.page-id-75 .site-footer {
+  position: relative;
+  top: 800px; }
+
+.page-id-75 .round-logo {
+  background: url("../../images/logos/inhabitent-logo-full.svg") 100%/300px no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  left: 32%; }
+
+.page-id-75 .latest-news {
+  position: relative;
+  top: 650px; }
+
+.page-template-page-find-us .entry-title {
+  margin-top: 50px;
+  margin-left: 125px;
+  text-transform: uppercase;
+  font-size: 35px; }
+
+.page-template-page-find-us .iframe {
+  width: 700px;
+  height: 300px; }
+
+.page-template-page-find-us .entry-content {
+  width: 700px;
+  margin-left: 125px; }
+  .page-template-page-find-us .entry-content h2 {
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 35px; }
+  .page-template-page-find-us .entry-content p {
+    font-family: "Merriweather";
+    font-size: 20px; }
+  .page-template-page-find-us .entry-content label {
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 16px;
+    font-family: sans-serif; }
+  .page-template-page-find-us .entry-content input, .page-template-page-find-us .entry-content textarea {
+    background: #2f1339;
+    opacity: .1;
+    border: 1px solid #2f1339; }

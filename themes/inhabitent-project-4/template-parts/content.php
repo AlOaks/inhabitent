@@ -7,6 +7,7 @@
 
 ?>
 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -24,5 +25,6 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<a class='read-more-btn' href='<?php the_permalink(); ?>'>Read More</a>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

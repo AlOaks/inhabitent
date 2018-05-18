@@ -20,3 +20,60 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+// Custom WP login logo
+
+function inhabitent_login_logo() { 
+
+    echo '<style type="text/css">
+
+        #login h1 a {
+
+            background: url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg) no-repeat !important;
+
+            background-size: 300px 53px !important;
+
+            width: 300px !important;
+
+            height: 53px !important; 
+
+        }
+
+        #login .button.button-primary {
+
+            background-color: #248a83;
+
+        }
+
+    </style>';
+
+}
+
+add_action( 'login_head', 'inhabitent_login_logo' );
+
+// Custom URL for WP login
+
+// @param string $url The URL the logo image link points to.
+
+// @return string
+
+function inhabitent_login_logo_url($url) {
+
+    return home_url();
+
+}
+
+add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
+
+// Custom title attribute for login logo link
+
+// @return string
+
+function inhabitent_login_title() {
+
+    return 'Inhabitent';
+
+}
+
+add_filter( 'login_headertitle', 'inhabitent_login_title' );

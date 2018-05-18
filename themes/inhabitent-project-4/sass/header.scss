@@ -1,15 +1,29 @@
+
+
 .site-header {
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 100%;
     border-bottom: 1px solid $lite-grey;
 
+    .minilogo {
+        background: url("../../images/logos/inhabitent-logo-tent.svg") 50%/50px no-repeat;
+        width: 50px;
+        height: 50px;
+        margin-left: 125px;
+    }
     
     .main-navigation {
         color: $lite-grey;
-        padding-left: 75%;
+        margin-right: 80px;
 
         li {
-            padding: 10px;
+            float: right;
+            padding-left: 30px;
+            font-size: 18px;
         }
     }
 }

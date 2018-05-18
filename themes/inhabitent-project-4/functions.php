@@ -64,8 +64,20 @@ function red_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name' => 'Footer Sidebar 1',
+		'id' => 'footer-sidebar-1',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
+
+
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -86,6 +98,8 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'red-starter-font-awesome', get_template_directory_uri() . '/build/js/fontawesome-all.min.js', array() );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -102,3 +116,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function my_login_logo_one() { 
+	?> 
+	<style type="text/css"> 
+		body.login div#login h1 a {
+			background-image: url('/images/logos/inhabitent-logo-full.svg');
+			padding-bottom: 30px; } 
+	</style>
+<?php 
+ } add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
