@@ -9,6 +9,38 @@
     width: 100%;
     border-bottom: 1px solid $lite-grey;
 
+    .search-form {
+        height: 20px;
+        border: none;
+        display: flex; 
+        margin-top: -20px;
+        margin-left: -80px;
+        flex-direction: row;
+        justify-content: center;
+
+        fieldset {
+            border: none;
+
+            .search-field {
+                width: 0;
+                background: none;
+                border: none;
+            }
+
+            .search-submit {
+                box-shadow: none;
+                background: none;
+                border: none;
+
+                .icon-search {
+                    color: white;
+
+                }
+            }
+        }
+
+    }
+
     .minilogo {
         background: url("../../images/logos/inhabitent-logo-tent.svg") 50%/50px no-repeat;
         width: 50px;
@@ -21,6 +53,7 @@
         margin-right: 80px;
 
         li {
+            font-weight: lighter;
             float: right;
             padding-left: 30px;
             font-size: 18px;

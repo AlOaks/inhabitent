@@ -6,48 +6,36 @@
  */
 
 get_header(); ?>
-<?php $price = CFS()->get( 'price' ); ?>
-<?php $excerpt = CFS()->get(' excerpt' ); ?>
-
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main product-wrapper" role="main">
-		
+		<main id="main" class="site-main" role="main">
+			<div class="general-wrapper">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="image-wrapper">
-			<?php echo get_the_post_thumbnail(); ?>
-			</div>
-			<div class="product-information">
-            <?php the_title( '<h1 class="product-title">', '</h1>' ); ?>
-        
-            <?php echo "<p class='price'>\${$price}.00</p>" ?>
-
-            	<div class="product-description">
-		        <?php the_content(); ?>
-		        <?php
-			        wp_link_pages( array(
-				                        'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				                        'after'  => '</div>',
-			    ) );
-				?>
+			<div class="blog-post-container">
+				<div class="post-wrapper">
+                <img class="about-hero-image" src=<?php the_post_thumbnail(); ?>
+                <h1 class="adventure-title"><?php the_title(); ?></h1>
+                <p class"adventure-author">by <?php the_author(); ?></p>
+                <p class="adventure-content"><?php the_content(); ?></p>
 				<div class="social-buttons">
 					<a href="facebook"><i class="fab fa-facebook-f"></i>  Like</a> 
 					<a href="facebook"><i class="fab fa-twitter"></i>  Tweet</a> 
 					<a href="facebook"><i class="fab fa-pinterest"></i>  Pin</a>
 				</div>
-				</div>
-				
 			</div>
 				
+
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
-				endif;
-			?>
-
+				endif; ?>
+			
+			</div>
 		<?php endwhile; // End of the loop. ?>
-				
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php get_footer(); ?>
