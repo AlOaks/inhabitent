@@ -16,15 +16,26 @@
         margin-top: -20px;
         margin-left: -80px;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
 
         fieldset {
             border: none;
+            display: flex;
+            flex-direction: row;
 
             .search-field {
                 width: 0;
                 background: none;
                 border: none;
+                text-transform: uppercase;
+                transition-duration: 1s;
+
+            }
+
+            .search-visible {
+                width: 200px;
+                transition-duration: 1s;
             }
 
             .search-submit {
@@ -33,7 +44,7 @@
                 border: none;
 
                 .icon-search {
-                    color: white;
+                    color: $green;
 
                 }
             }

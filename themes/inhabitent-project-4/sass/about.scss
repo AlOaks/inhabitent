@@ -1,12 +1,3 @@
-.hero-wrapper {
-    background-color: black;
-    width: 100%;
-    height: auto;
-    top: 0;
-    position: absolute;
-    z-index: -50;
-    
-}
 
 .about-hero-image > img {
     width: 100%;
@@ -14,6 +5,7 @@
     top: 0;
     position: absolute;
     z-index: -100;
+    background: black;
 }
 
 
@@ -26,7 +18,7 @@
     text-transform: uppercase;
 }
 
-.page-template-page-about .minilogo {
+.page-template-page-about .minilogo, .single-adventures .minilogo {
     background: url("../../images/logos/inhabitent-logo-tent-white.svg") 50%/50px no-repeat;
     width: 50px;
     height: 50px;
@@ -60,26 +52,41 @@
 
 
 
-.page-template-page-about, .home {
+.page-template-page-about, .home, .single-adventures {
 
 .style-header {
     border-bottom: 0;
     background: transparent;
     position: absolute;
 
+    .search-field {
+        color: white;
+    }
+
     a {
+        color: white;
+    }
+
+    #icon {
         color: white;
     }
 }
 }
 
-.page-template-page-about, .home {
+.page-template-page-about, .home, .single-adventures {
+
+    
     
     .style-header2 {
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
     border-bottom: 1px solid $lite-grey;
     z-index: 10;
+
+    .search-field {
+
+         color: $med-grey;
+        }
 
         .minilogo {
             background: url("../../images/logos/inhabitent-logo-tent.svg") 50%/50px no-repeat;
@@ -88,5 +95,7 @@
         a {
         color: $green;
         }
+
+        
     }
 }

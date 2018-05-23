@@ -17,5 +17,17 @@ jQuery( document ).ready(function($) {
         }
     })
 
+    $(".search-submit").click(function(event) {
+        console.log(event);
+        event.preventDefault();
+        $(".search-field").toggleClass("search-visible");
+        
+    });
+
+    $(".search-form").on('keydown', function(event) {
+        if(event.which == 13) {
+            $(".search-form").submit();
+        }
+    })
 
 });

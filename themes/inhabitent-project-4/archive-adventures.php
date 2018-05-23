@@ -1,6 +1,8 @@
 <?php
 /**
  * The template for displaying archive pages.
+ * 
+ * Template Name: Adventures
  *
  * @package RED_Starter_Theme
  */
@@ -17,18 +19,19 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 
-			
+			<div class="adventure-catalog-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 			
 				<div class="adventure-wrapper">
-                <?php  echo "<img class='adventure-image' src='".the_post_thumbnail('large')."'/>" ?> 
-                <h1 class="adventure-title"><?php the_title();?></h1>
-                <h3 class="read-entry-button2"><a href="<?php the_permalink(); ?>">Read More</a></h3>
+                        <?php  echo "<img class='adventure-image' src='".the_post_thumbnail(' ')."'/>" ?>
+                        <a href=""><h1 class="adventure-title"><?php the_title();?></h1></a>
+                        <h3 class="read-entry-button2"><a href="<?php the_permalink(); ?>">Read More</a></h3>
 				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
-		</div>
-		</div>
+		        </div>
+            </div>
+        </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
