@@ -6,8 +6,10 @@
  */
 
 get_header(); ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<button type="button" id="close-comments">Close Comments</button>
 			<div class="general-wrapper">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="blog-post-container">
@@ -19,6 +21,7 @@ get_header(); ?>
 					<a href="facebook"><i class="fab fa-pinterest"></i>  Pin</a>
 				</div>
 			</div>
+			
 				
 
 			<?php

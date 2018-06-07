@@ -22,6 +22,8 @@ plugins/*
 
 !plugins/inhabitent-contact-info/
 
+!plugins/red-functionality-master
+
 # Ignore everything in "themes" except the active theme. #
 
 themes/*
