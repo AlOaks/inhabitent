@@ -930,6 +930,10 @@ object {
     width: 150px;
     font-size: 13px;
     padding: 10px 30px 10px 30px; }
+    .post-type-archive .product-description .social-buttons a:hover, .tax-product_type .product-description .social-buttons a:hover, .single-products .product-description .social-buttons a:hover {
+      background: #248A83;
+      color: white;
+      border-color: #248A83; }
 
 .tax-term {
   text-transform: uppercase;
@@ -1370,6 +1374,7 @@ object {
       flex-wrap: wrap;
   height: 400px;
   width: 90%;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   -ms-flex-pack: distribute;
