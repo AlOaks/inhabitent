@@ -8,9 +8,10 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="hero-wrapper"></div>
+			<div class="hero-wrapper">
 				<div class="about-hero-image"><?php the_post_thumbnail(); ?></div>		
-		<div class="round-logo"></div>
+				<div class="round-logo"></div>
+			</div>
 		<div class="shop-frontpage">
 			<h1 class="shop-title-front">Shop Stuff</h1>
 				<?php

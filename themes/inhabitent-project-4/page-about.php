@@ -16,7 +16,7 @@ get_header(); ?>
 
 				<h1 class="about-main-title"><?php the_title(); ?></h1>
 				<div class="hero-wrapper"></div>
-				<img class="about-hero-image" src=<?php the_post_thumbnail(); ?>
+				<img class="about-hero-image" src=<?php echo CFS()->get('about_hero'); ?> />
 				
 				<div class="the-content">
 				<?php the_content(); ?>

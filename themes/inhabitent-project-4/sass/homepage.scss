@@ -15,16 +15,16 @@
     }
 
     .site-footer {
-        position: relative;
-        top: 1500px;
+        // position: relative;
+        // top: 1500px;
     }
 
     .round-logo {
         background: url("../../images/logos/inhabitent-logo-full.svg") 100%/300px no-repeat;
         width: 400px;
         height: 400px;
-        position: relative;
-        top: 100px;
+        position: absolute;
+        top: 200px;
         left: 32%;
 
     }
@@ -32,13 +32,14 @@
     // JOURNAL
 
     .latest-news {
-        position: relative;
-        top: 650px;
+        // position: relative;
+        // top: 650px;
         display: flex;
         flex-wrap: wrap;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 50px;
         justify-content: space-between;
 
         .journal-title-front {
@@ -125,13 +126,13 @@
     // SHOP 
 
     .shop-frontpage {
-        position: relative;
-        top: 500px;
+        // position: relative;
+        // top: 500px;
         display: flex;
         flex-wrap: wrap;
-        height: 400px;
+        // height: 400px;
         width: 90%;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         justify-content: space-around;
@@ -159,7 +160,7 @@
             border-top: 5px;
             border-color: $lite-grey;
             border-style: solid;
-            height: 300px;
+            // height: 300px;
             padding: 15px;
             margin: auto;
 
@@ -207,40 +208,49 @@
         }
     }
    // ADVENTURES 
+
+   .more-adv-btn {
+        padding: 15px 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10%;
+        background: $green;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 20px;
+   }
    .adventures-title-front {
-       position: relative;
-       top: 750px;
+    //    position: relative;
+    //    top: 750px;
        text-transform: uppercase;
        color: $purple;
        font-size: 50px;
        flex-basis: 100%;
        text-align: center;
        font-weight: lighter;
-   }
-
-   .more-adv-btn {
-       position: relative;
-       top: 1400px;
+       margin-top: 80px;
    }
 
    .adventures-container {
-       position: relative;
-       top: 800px;
+    //    position: relative;
+    //    top: 800px;
        width: 80%;
+       height: 650px;
        margin-left: auto;
        margin-right: auto;
+       margin-bottom: 30px;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
        grid-template-rows: 1fr 1fr;
-       height: 600px;
+    //    height: 600px;
        grid-gap: 15px;
-       margin-bottom: -500px;
 
        .adventures-overlay {
            position: absolute;
-           width: 100%;
-           height: 100%;
            z-index: 1;
+           height: 100%;
+           width: 100%;
            background: rgba(0,0,0, .3);
        }
 
@@ -294,6 +304,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
        }
 
        :nth-child(1) {
@@ -319,10 +330,6 @@
                     font-size: 50px;
                 }
             }
-
-           .adventures-overlay {
-               height: 48.5%;
-           }
        }
 
        :nth-child(3), :nth-child(4) {
@@ -335,13 +342,12 @@
                     font-size: 35px;
                 }
 
-            }
-
-            .adventures-overlay {
-                width: 48.5%;
-                height: 48.5%;
-            }
+            } 
        }
+   }
+
+   .site-footer {
+       margin-top: 80px;
    }
 }   
 

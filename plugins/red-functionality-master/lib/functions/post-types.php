@@ -55,6 +55,7 @@ function custom_product_type_post() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'menu_icon'   			=> 'dashicons-cart',
 	);
 	register_post_type( 'products', $args );
 
@@ -110,6 +111,7 @@ function custom_adventures_post() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'menu_icon'				=> 'dashicons-admin-site',
 	);
 	register_post_type( 'adventures', $argsad );
 

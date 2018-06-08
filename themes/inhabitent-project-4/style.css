@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -231,43 +231,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Bold.eot");
-  src: url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff"), url("Merriweather-Bold.ttf") format("truetype"), url("Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.eot");
-  src: url("Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff"), url("Merriweather-LightItalic.ttf") format("truetype"), url("Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Light.eot");
-  src: url("Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff"), url("Merriweather-Light.ttf") format("truetype"), url("Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.eot");
-  src: url("Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff"), url("Merriweather-BoldItalic.ttf") format("truetype"), url("Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Novecento sans wide Normal';
-  src: url("Novecentosanswide-Normal.eot");
-  src: url("Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-Normal.woff2") format("woff2"), url("Novecentosanswide-Normal.woff") format("woff"), url("Novecentosanswide-Normal.ttf") format("truetype"), url("Novecentosanswide-Normal.svg#Novecentosanswide-Normal") format("svg");
+  src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot");
+  src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Normal.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Normal.svg#Novecentosanswide-Normal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento sans wide';
-  src: url("Novecentosanswide-DemiBold.eot");
-  src: url("Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-DemiBold.woff2") format("woff2"), url("Novecentosanswide-DemiBold.woff") format("woff"), url("Novecentosanswide-DemiBold.ttf") format("truetype"), url("Novecentosanswide-DemiBold.svg#Novecentosanswide-DemiBold") format("svg");
+  src: url("../../fonts/Novecento/Novecentosanswide-DemiBold.eot");
+  src: url("../../fonts/Novecento/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-DemiBold.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold.svg#Novecentosanswide-DemiBold") format("svg");
   font-weight: 600;
   font-style: normal; }
 
@@ -946,8 +946,6 @@ object {
 .about-hero-image > img {
   width: 100%;
   height: auto;
-  top: 0;
-  position: absolute;
   z-index: -100;
   background: black; }
 
@@ -966,8 +964,6 @@ object {
   margin-left: 125px; }
 
 .the-content {
-  position: relative;
-  top: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,21 +1266,15 @@ object {
 .home .site-header a {
   font-family: sans-serif; }
 
-.home .site-footer {
-  position: relative;
-  top: 1500px; }
-
 .home .round-logo {
   background: url("../../images/logos/inhabitent-logo-full.svg") 100%/300px no-repeat;
   width: 400px;
   height: 400px;
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 200px;
   left: 32%; }
 
 .home .latest-news {
-  position: relative;
-  top: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1293,6 +1283,7 @@ object {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -1366,16 +1357,13 @@ object {
           color: white; }
 
 .home .shop-frontpage {
-  position: relative;
-  top: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 400px;
   width: 90%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   -ms-flex-pack: distribute;
@@ -1412,7 +1400,6 @@ object {
     border-top: 5px;
     border-color: #a1a1a1;
     border-style: solid;
-    height: 300px;
     padding: 15px;
     margin: auto; }
     .home .shop-frontpage .category-container:hover {
@@ -1442,38 +1429,42 @@ object {
       .home .shop-frontpage .category-container .shop-category:hover {
         background: #144d49; }
 
+.home .more-adv-btn {
+  padding: 15px 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  background: #248A83;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px; }
+
 .home .adventures-title-front {
-  position: relative;
-  top: 750px;
   text-transform: uppercase;
   color: #2f1339;
   font-size: 50px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
-  font-weight: lighter; }
-
-.home .more-adv-btn {
-  position: relative;
-  top: 1400px; }
+  font-weight: lighter;
+  margin-top: 80px; }
 
 .home .adventures-container {
-  position: relative;
-  top: 800px;
   width: 80%;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 600px;
-  grid-gap: 15px;
-  margin-bottom: -500px; }
+  grid-gap: 15px; }
   .home .adventures-container .adventures-overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
     z-index: 1;
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.3); }
   .home .adventures-container .read-entry-button3 {
     font-size: 15px; }
@@ -1511,7 +1502,8 @@ object {
   .home .adventures-container .adventure-image-homepage {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    position: relative; }
   .home .adventures-container :nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; }
@@ -1522,15 +1514,13 @@ object {
     grid-row: 1 / span 1; }
     .home .adventures-container :nth-child(2) .title-link a {
       font-size: 50px; }
-    .home .adventures-container :nth-child(2) .adventures-overlay {
-      height: 48.5%; }
   .home .adventures-container :nth-child(3) .title-link, .home .adventures-container :nth-child(4) .title-link {
     line-height: 3rem; }
     .home .adventures-container :nth-child(3) .title-link a, .home .adventures-container :nth-child(4) .title-link a {
       font-size: 35px; }
-  .home .adventures-container :nth-child(3) .adventures-overlay, .home .adventures-container :nth-child(4) .adventures-overlay {
-    width: 48.5%;
-    height: 48.5%; }
+
+.home .site-footer {
+  margin-top: 80px; }
 
 .page-template-page-find-us .find-us-container {
   display: -webkit-box;

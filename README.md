@@ -22,6 +22,9 @@ Albert J Robles
 
 E-mail: jalberto.robles@outlook.com
 
+
+[](themes/inhabitent-project-4/screenshot.jpg)
+
 ## License
 
 This is my fourth project on RED Academy, not much to see here. Creative Commons License. 2018
