@@ -72,25 +72,25 @@ get_header(); ?>
 
 <!-- ADVENTURES -->
 <h1 class="adventures-title-front">Latest Adventures</h1>
-<ul class="adventures-container">
+<div class="adventures-container">
 <?php if ( $adventures->have_posts() ) : ?>
-	<?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-				<li class="adventure-preview"> 
+	<?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?> 
 					<div class='adventure-image-homepage' style='background-image: url("<?php echo get_the_post_thumbnail_url(); ?> ")'>
+					<div class="adventures-overlay"></div>
 						<h1 class="title-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<h3 class="read-entry-button2"><a href="<?php the_permalink(); ?>">Read More</a></h3>			
+						<p class="read-entry-button3"><a href=<?php the_permalink(); ?>>Read More</a></p>			
 					</div>
-				</li>
 		   <?php endwhile; ?>
-		   
+				</div>
+				<a class="more-adv-btn" href="<?php echo get_post_type_archive_link('adventures'); ?>">More Adventures</a>
 	<?php wp_reset_postdata(); ?>
-	
+				
 	<?php else : ?>
 
 	  <h2>Nothing found!</h2>
 	  
 <?php endif; ?>
-</div>
+	
 
 
 		</main><!-- #main -->
