@@ -23,7 +23,7 @@ Albert J Robles
 E-mail: jalberto.robles@outlook.com
 
 
-[](themes/inhabitent-project-4/screenshot.jpg)
+![](themes/inhabitent-project-4/screenshot.jpg)
 
 ## License
 
